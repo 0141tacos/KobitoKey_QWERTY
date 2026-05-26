@@ -38,41 +38,52 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L     &kp U        &kp COMMA      &kp PERIOD    &kp F            &kp W        &kp R      &kp Y      &kp P
-&kp E      &kp I     &kp A        &kp O          &kp MINUS     &kp K            &kp T        &kp N      &kp S      &kp H
-&kp Z      &kp X     &kp C        &kp V          &kp TAB       &kp G            &kp D        &kp M      &kp J      &kp B
-&kp LSHFT  &kp LALT  &lt 2 ENTER  &kp BACKSPACE  &kp LEFT_GUI  &kp RIGHT_SHIFT  &lt 3 SPACE  &kp RSHFT  &kp RSHFT  &mt LALT SLASH
+&kp Q      &kp L     &kp U        &kp COMMA      &kp PERIOD    &kp F            &kp W        &kp R              &kp Y      &kp P
+&kp E      &kp I     &kp A        &kp O          &kp MINUS     &kp K            &kp T        &kp N              &kp S      &kp H
+&kp Z      &kp X     &kp C        &kp V          &kp TAB       &kp G            &kp D        &kp M              &kp J      &kp B
+&kp LSHFT  &kp LALT  &lt 3 ENTER  &kp BACKSPACE  &kp LEFT_GUI  &kp RIGHT_SHIFT  &lt 1 SPACE  &kp RIGHT_CONTROL  &kp RSHFT  &lt 4 CAPS
             >;
         };
 
         layer1 {
-            label = "NUMBER";
+            label = "ARROW";
             bindings = <
-&kp N0     &kp N1  &kp N2  &kp N3     &trans  &kp MINUS  &trans     &kp UP    &trans     &trans
-&kp EQUAL  &kp N4  &kp N5  &kp N6     &trans  &kp PLUS   &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&trans     &kp N7  &kp N8  &kp N9     &trans  &kp ASTRK  &kp SLASH  &kp LBKT  &kp RBKT   &trans
-&trans     &trans  &trans  &kp LSHFT  &trans  &trans     &trans     &trans    &trans     &trans
+&kp CARET             &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp AT_SIGN  &none  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &none
+&kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp HASH     &none  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &none
+&kp TILDE             &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp DOLLAR   &none  &kp                 &kp             &kp                  &none
+&kp LSHFT             &kp                   &kp LCMD           &kp LALT               &to 0        &kp    &kp                 &kp             &to 0                &kp RALT
             >;
         };
 
         layer2 {
             label = "FUNCTION";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&trans        &trans        &trans        &trans        &bt BT_CLR      &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &kp F11  &kp F12  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans          &kp DEL  &trans   &trans  &trans  &trans
+&kp COLON       &kp N7  &kp N8  &kp N9  &none      &kp AMPERSAND    &kp LESS_THAN     &kp PLUS        &kp ASTERISK  &kp COLON
+&kp N0          &kp N4  &kp N5  &kp N6  &trans     &kp EXCLAMATION  &kp EQUAL         &kp MINUS       &kp FSLH      &kp SEMI
+&kp UNDERSCORE  &kp N1  &kp N2  &kp N3  &kp SLASH  &kp PIPE         &kp GREATER_THAN  &kp UNDERSCORE  &kp PERCENT   &kp QUESTION
+&trans          &trans  &trans  &trans  &trans     &trans           &trans            &trans          &trans        &trans
             >;
         };
 
         layer3 {
-            label = "MOUSE";
+            label = "NUMBER";
             bindings = <
-&trans     &trans  &trans    &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&kp LSHFT  &trans  &kp LCMD  &kp LALT  &to 0   &trans  &trans    &trans    &to 0     &kp RALT
+&kp F9  &kp F10  &kp F11  &kp F12         &trans  &none   &trans  &mkp MB4  &mkp MB5  &trans
+&kp F5  &kp F6   &kp F7   &kp F8          &trans  &none   &none   &mkp MB1  &mkp MB2  &trans
+&kp F1  &kp F2   &kp F3   &kp F4          &trans  &none   &none   &none     &none     &trans
+&trans  &trans   &trans   &kp LEFT_SHIFT  &trans  &trans  &trans  &trans    &trans    &trans
             >;
+        };
+
+        layer_4 {
+            bindings = <
+&bt BT_CLR     &trans         &trans         &trans         &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans         &trans         &trans         &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "BT";
         };
     };
 };
