@@ -48,10 +48,10 @@
         layer1 {
             label = "ARROW";
             bindings = <
-&kp CARET             &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp AT_SIGN  &none  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT_ARROW)  &none
-&kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp HASH     &none  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &none
-&kp TILDE             &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp DOLLAR   &none  &kp                 &kp             &kp                  &none
-&kp LSHFT             &kp                   &kp LCMD           &kp LALT               &to 0        &kp    &kp                 &kp             &to 0                &kp RALT
+&kp CARET             &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp AT_SIGN  &none  &kp LG(LEFT_ARROW)  &kp UP_ARROW      &kp LG(RIGHT_ARROW)  &none
+&kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp HASH     &none  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &none
+&kp TILDE             &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp DOLLAR   &none  &kp LA(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LA(RIGHT_ARROW)  &none
+&kp LSHFT             &none                 &kp LCMD           &kp LALT               &to 0        &none  &none               &none             &to 0                &kp RALT
             >;
         };
 
