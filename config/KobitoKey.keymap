@@ -38,10 +38,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L     &kp U        &kp COMMA      &kp PERIOD    &kp F            &kp W        &kp R              &kp Y      &kp P
-&kp E      &kp I     &kp A        &kp O          &kp MINUS     &kp K            &kp T        &kp N              &kp S      &kp H
-&kp Z      &kp X     &kp C        &kp V          &kp TAB       &kp G            &kp D        &kp M              &kp J      &kp B
-&kp LSHFT  &kp LALT  &lt 3 ENTER  &kp BACKSPACE  &kp LEFT_GUI  &kp RIGHT_SHIFT  &lt 1 SPACE  &kp RIGHT_CONTROL  &kp RSHFT  &lt 4 CAPS
+&kp Q      &kp L     &kp U        &kp COMMA      &kp PERIOD          &kp F            &kp W        &kp R              &kp Y      &kp P
+&kp E      &kp I     &kp A        &kp O          &kp MINUS           &kp K            &kp T        &kp N              &kp S      &kp H
+&kp Z      &kp X     &kp C        &kp V          &mt LEFT_SHIFT TAB  &kp G            &kp D        &kp M              &kp J      &kp B
+&kp LSHFT  &kp LALT  &lt 2 ENTER  &kp BACKSPACE  &kp LEFT_GUI        &kp RIGHT_SHIFT  &lt 1 SPACE  &kp RIGHT_CONTROL  &kp RSHFT  &lt 4 CAPS
             >;
         };
 
@@ -51,7 +51,7 @@
 &kp CARET             &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp AT_SIGN  &none  &kp LG(LEFT_ARROW)  &kp UP_ARROW      &kp LG(RIGHT_ARROW)  &none
 &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp HASH     &none  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &none
 &kp TILDE             &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp DOLLAR   &none  &kp LA(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LA(RIGHT_ARROW)  &none
-&kp LSHFT             &none                 &kp LCMD           &kp LALT               &to 0        &none  &none               &none             &to 0                &kp RALT
+&kp LSHFT             &none                 &kp LCMD           &kp LEFT_SHIFT         &to 0        &none  &none               &none             &to 0                &kp RALT
             >;
         };
 
@@ -68,10 +68,10 @@
         layer3 {
             label = "NUMBER";
             bindings = <
-&kp F9  &kp F10  &kp F11  &kp F12         &trans  &none   &trans  &mkp MB4  &mkp MB5  &trans
-&kp F5  &kp F6   &kp F7   &kp F8          &trans  &none   &none   &mkp MB1  &mkp MB2  &trans
-&kp F1  &kp F2   &kp F3   &kp F4          &trans  &none   &none   &none     &none     &trans
-&trans  &trans   &trans   &kp LEFT_SHIFT  &trans  &trans  &trans  &trans    &trans    &trans
+&kp F9  &kp F10  &kp F11  &kp F12  &trans  &none   &trans  &mkp MB4  &mkp MB5  &trans
+&kp F5  &kp F6   &kp F7   &kp F8   &trans  &none   &none   &mkp MB1  &mkp MB2  &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &trans  &none   &none   &none     &none     &trans
+&trans  &trans   &trans   &none    &trans  &trans  &trans  &trans    &trans    &trans
             >;
         };
 
