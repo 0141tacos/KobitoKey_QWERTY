@@ -38,40 +38,40 @@
 
         default_layer {
             bindings = <
-&kp LSHFT  &kp L     &kp U        &kp COMMA      &kp PERIOD          &kp F            &kp W        &kp R              &kp Y  &lt 4 CAPSLOCK
-&kp Q      &kp I     &kp A        &kp O          &kp MINUS           &kp K            &kp T        &kp N              &kp S  &kp P
-&kp E      &kp X     &kp C        &kp V          &mt LEFT_SHIFT TAB  &kp G            &kp D        &kp M              &kp J  &kp H
-&kp Z      &kp LALT  &lt 2 ENTER  &kp BACKSPACE  &kp LEFT_GUI        &kp RIGHT_SHIFT  &lt 1 SPACE  &kp RIGHT_CONTROL  &mo 3  &kp B
+&kp Q      &kp L     &kp U        &kp COMMA      &kp PERIOD          &kp F            &kp W        &kp R              &kp Y  &kp P
+&kp E      &kp I     &kp A        &kp O          &kp MINUS           &kp K            &kp T        &kp N              &kp S  &kp H
+&kp Z      &kp X     &kp C        &kp V          &mt LEFT_SHIFT TAB  &kp G            &kp D        &kp M              &kp J  &kp B
+&kp LSHFT  &kp LALT  &lt 2 ENTER  &kp BACKSPACE  &kp LEFT_GUI        &kp RIGHT_SHIFT  &lt 1 SPACE  &kp RIGHT_CONTROL  &mo 3  &lt 4 CAPSLOCK
             >;
         };
 
         layer1 {
             label = "ARROW";
             bindings = <
-&none          &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp AT_SIGN   &none  &kp LG(LEFT_ARROW)  &kp UP_ARROW      &kp LG(RIGHT_ARROW)  &none
-&kp CARET      &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp HASH      &none  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &none
-&kp BACKSLASH  &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp DOLLAR    &none  &kp LA(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LA(RIGHT_ARROW)  &none
-&kp TILDE      &none                 &none              &kp LEFT_SHIFT         &kp LEFT_GUI  &none  &none               &none             &to 0                &kp RALT
+&kp CARET             &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp AT_SIGN   &none  &kp LG(LEFT_ARROW)  &kp UP_ARROW      &kp LG(RIGHT_ARROW)  &none
+&kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp HASH      &none  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &none
+&kp TILDE             &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp DOLLAR    &none  &kp LA(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LA(RIGHT_ARROW)  &none
+&kp LSHFT             &none                 &none              &kp LEFT_SHIFT         &kp LEFT_GUI  &none  &none               &none             &to 0                &kp RALT
             >;
         };
 
         layer2 {
             label = "FUNCTION";
             bindings = <
-&none           &kp N7  &kp N8  &kp N9  &none      &kp AMPERSAND    &kp LESS_THAN     &kp PLUS        &kp ASTERISK  &none
-&kp COLON       &kp N4  &kp N5  &kp N6  &trans     &kp EXCLAMATION  &kp EQUAL         &kp MINUS       &kp FSLH      &kp COLON
-&kp N0          &kp N1  &kp N2  &kp N3  &kp SLASH  &kp PIPE         &kp GREATER_THAN  &kp UNDERSCORE  &kp PERCENT   &kp SEMICOLON
-&kp UNDERSCORE  &trans  &trans  &trans  &trans     &trans           &trans            &trans          &trans        &kp QUESTION
+&kp COLON       &kp N7  &kp N8  &kp N9  &none      &kp AMPERSAND    &kp LESS_THAN     &kp PLUS        &kp ASTERISK  &kp COLON
+&kp N0          &kp N4  &kp N5  &kp N6  &trans     &kp EXCLAMATION  &kp EQUAL         &kp MINUS       &kp FSLH      &kp SEMI
+&kp UNDERSCORE  &kp N1  &kp N2  &kp N3  &kp SLASH  &kp PIPE         &kp GREATER_THAN  &kp UNDERSCORE  &kp PERCENT   &kp QUESTION
+&trans          &trans  &trans  &trans  &trans     &trans           &trans            &trans          &trans        &trans
             >;
         };
 
         layer3 {
             label = "MOUSE";
             bindings = <
-&none   &kp F10  &kp F11  &kp F12  &trans        &mkp MB1  &mkp MB2  &mkp MB4  &none   &trans
-&kp F9  &kp F6   &kp F7   &kp F8   &trans        &mkp MB3  &mkp MB5  &none     &none   &trans
-&kp F5  &kp F2   &kp F3   &kp F4   &trans        &none     &none     &none     &none   &trans
-&kp F1  &trans   &trans   &none    &kp LEFT_GUI  &trans    &trans    &trans    &trans  &trans
+&kp F9  &kp F10  &kp F11  &kp F12  &trans        &mkp MB1  &mkp MB2  &mkp MB4  &none   &trans
+&kp F5  &kp F6   &kp F7   &kp F8   &trans        &mkp MB3  &mkp MB5  &none     &none   &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &trans        &none     &none     &none     &none   &trans
+&trans  &trans   &trans   &none    &kp LEFT_GUI  &trans    &trans    &trans    &trans  &trans
             >;
         };
 
