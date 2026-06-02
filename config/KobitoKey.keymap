@@ -77,10 +77,10 @@
         MOUSE {
             label = "mouse";
             bindings = <
-&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_SHIFT  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans            &trans        &trans          &mkp MB4  &mkp MB5  &trans    &trans  &trans
-&trans  &trans  &trans            &trans        &trans          &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans            &trans        &trans          &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &kp LEFT_CONTROL  &kp LEFT_GUI   &kp LEFT_SHIFT  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &trans  &trans            &kp LG(MINUS)  &kp LG(PLUS)    &mkp MB4  &mkp MB5  &trans    &trans  &trans
+&trans  &trans  &trans            &trans         &trans          &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans            &trans         &trans          &trans    &trans    &trans    &trans  &trans
             >;
         };
 
