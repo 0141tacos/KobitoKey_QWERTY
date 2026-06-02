@@ -38,19 +38,19 @@
 
         default_layer_mac {
             bindings = <
-&kp Q         &kp L  &kp U        &kp COMMA      &kp PERIOD          &kp F                  &kp W        &kp R              &kp Y  &kp P
-&kp E         &kp I  &kp A        &kp O          &kp MINUS           &kp K                  &kp T        &kp N              &kp S  &kp H
-&kp Z         &kp X  &kp C        &kp V          &mt LEFT_SHIFT TAB  &kp G                  &kp D        &kp M              &kp J  &kp B
-&kp LEFT_ALT  &to 1  &lt 3 ENTER  &kp BACKSPACE  &mt LEFT_GUI LANG2  &mt RIGHT_SHIFT LANG1  &lt 2 SPACE  &kp RIGHT_CONTROL  &to 0  &kp ESCAPE
+&kp Q                &kp L  &kp U        &kp COMMA      &kp PERIOD          &kp F                  &kp W        &kp R              &kp Y  &kp P
+&kp E                &kp I  &kp A        &kp O          &kp MINUS           &kp K                  &kp T        &kp N              &kp S  &kp H
+&kp Z                &kp X  &kp C        &kp V          &mt LEFT_SHIFT TAB  &kp G                  &kp D        &kp M              &kp J  &kp B
+&mt LEFT_ALT ESCAPE  &to 1  &lt 3 ENTER  &kp BACKSPACE  &mt LEFT_GUI LANG2  &mt RIGHT_SHIFT LANG1  &lt 2 SPACE  &kp RIGHT_CONTROL  &to 0  &kp ESCAPE
             >;
         };
 
         default_layer_windows {
             bindings = <
-&kp Q         &kp L  &kp U        &kp COMMA      &kp PERIOD              &kp F                  &kp W        &kp R             &kp Y  &kp P
-&kp E         &kp I  &kp A        &kp O          &kp MINUS               &kp K                  &kp T        &kp N             &kp S  &kp H
-&kp Z         &kp X  &kp C        &kp V          &mt LEFT_SHIFT TAB      &kp G                  &kp D        &kp M             &kp J  &kp B
-&kp LEFT_ALT  &to 1  &lt 3 ENTER  &kp BACKSPACE  &mt LEFT_CONTROL LANG2  &mt RIGHT_SHIFT LANG1  &lt 2 SPACE  &kp LEFT_COMMAND  &to 0  &kp ESCAPE
+&kp Q                &kp L  &kp U        &kp COMMA      &kp PERIOD              &kp F                  &kp W        &kp R             &kp Y  &kp P
+&kp E                &kp I  &kp A        &kp O          &kp MINUS               &kp K                  &kp T        &kp N             &kp S  &kp H
+&kp Z                &kp X  &kp C        &kp V          &mt LEFT_SHIFT TAB      &kp G                  &kp D        &kp M             &kp J  &kp B
+&mt LEFT_ALT ESCAPE  &to 1  &lt 3 ENTER  &kp BACKSPACE  &mt LEFT_CONTROL LANG2  &mt RIGHT_SHIFT LANG1  &lt 2 SPACE  &kp LEFT_COMMAND  &to 0  &kp ESCAPE
             >;
         };
 
@@ -60,7 +60,7 @@
 &kp CARET             &kp LEFT_BRACKET      &kp DOUBLE_QUOTES  &kp RIGHT_BRACKET      &kp AT_SIGN   &none  &kp LG(LEFT_ARROW)  &kp UP_ARROW      &kp LG(RIGHT_ARROW)  &none
 &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp SQT            &kp RIGHT_PARENTHESIS  &kp HASH      &none  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &none
 &kp TILDE             &kp LEFT_BRACE        &kp GRAVE          &kp RIGHT_BRACE        &kp DOLLAR    &none  &kp LA(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LA(RIGHT_ARROW)  &none
-&kp LSHFT             &none                 &none              &kp DELETE             &kp LEFT_GUI  &none  &none               &none             &to 0                &kp RALT
+&trans                &none                 &none              &kp DELETE             &kp LEFT_GUI  &none  &none               &none             &to 0                &trans
             >;
         };
 
