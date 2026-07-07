@@ -41,7 +41,7 @@
             label = "ARROW";
             bindings = <
 &kp EQUAL  &kp RIGHT_BRACKET        &kp LS(N2)  &kp BACKSLASH         &kp LEFT_BRACKET  &none               &kp LG(LEFT_ARROW)  &kp UP_ARROW      &kp LG(RIGHT_ARROW)  &none
-&kp INT1   &kp LS(N8)               &kp LS(N7)  &kp LS(N9)            &kp LS(N3)        &kp LS(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp RS(RIGHT_ARROW)
+&kp LA(INT3)   &kp LS(N8)               &kp LS(N7)  &kp LS(N9)            &kp LS(N3)        &kp LS(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &kp RS(RIGHT_ARROW)
 &kp LS(EQUAL)  &kp LS(RIGHT_BRACKET)  &kp LS(LEFT_BRACKET)  &kp LS(BACKSLASH)  &kp LS(N4)  &none               &kp LA(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LA(RIGHT_ARROW)  &none
 &to 1          &none                 &kp LEFT_ALT       &kp DELETE             &kp LEFT_GUI  &none               &none               &none             &trans               &trans
             >;
@@ -50,7 +50,7 @@
         NUMBER {
             label = "number";
             bindings = <
-&kp SQT          &kp N7  &kp N8  &kp N9  &none      &kp AMPERSAND    &kp LESS_THAN     &kp LS(SEMI)     &kp LS(SQT)  &kp SQT
+&kp SQT          &kp N7  &kp N8  &kp N9  &none      &kp LS(N6)    &kp LESS_THAN     &kp LS(SEMI)     &kp LS(SQT)  &kp SQT
 &kp N0           &kp N4  &kp N5  &kp N6  &trans     &kp EXCLAMATION  &kp LS(MINUS)     &kp MINUS       &kp FSLH     &kp SEMI
 &kp LS(INT1)     &kp N1  &kp N2  &kp N3  &kp SLASH  &kp LS(INT3)     &kp GREATER_THAN  &kp LS(INT1)    &kp PERCENT  &kp QUESTION
 &trans          &trans  &trans  &trans  &trans     &trans           &trans            &trans          &trans        &to 0
@@ -61,7 +61,7 @@
             label = "mouse";
             bindings = <
 &trans  &trans  &kp LEFT_CONTROL  &kp LEFT_GUI   &kp LEFT_SHIFT  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans            &kp LG(MINUS)  &kp LG(PLUS)    &mkp MB4  &mkp MB5  &trans    &trans  &trans
+&trans  &trans  &trans            &kp LG(MINUS)  &kp LG(LS(SEMI))    &mkp MB4  &mkp MB5  &trans    &trans  &trans
 &trans  &trans  &trans            &trans         &trans          &trans    &trans    &trans    &trans  &trans
 &trans  &trans  &trans            &trans         &trans          &trans    &trans    &trans    &trans  &trans
             >;
